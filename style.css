@@ -5,7 +5,7 @@ div{
 }
 
 button{
-    border: 2px solid black;
+    border: 2px solid #000000;
     background-color: #fff;
     font-weight: bold;
     font-size: 30px;
@@ -13,6 +13,12 @@ button{
     height: 50px;
     cursor: pointer;
     outline: none;
+}
+button.buy{
+    margin-left: 30px;
+    width: 80px;
+    height: 50px;
+    background-color: crimson;
 }
 button:disabled{
     opacity: 0.3;
