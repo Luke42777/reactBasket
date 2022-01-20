@@ -26,7 +26,7 @@ handleBuy = () => {
         return (
             <>
                 <button disabled={this.state.shoppingCart ? false: true} onClick={this.handleRemoveFromCart}>-</button>
-                <span> {this.state.shoppingCart} </span>
+                <span style={this.state.shoppingCart === 0 ? {opacity: 0.3} : {}}> {this.state.shoppingCart} </span>
                 <button disabled={(this.state.shoppingCart === this.state.productsAvailable) ? true: false} onClick={this.handleAddToCart}>+</button>
                 {this.state.shoppingCart > 0 && <button className="buy" onClick={this.handleBuy}>Buy</button>}
             </>)
